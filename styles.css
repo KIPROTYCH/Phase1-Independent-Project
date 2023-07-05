@@ -1,16 +1,24 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Poppins:ital,wght@0,200;0,300;0,500;1,300;1,400;1,500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-image: url(./img/premier.png);
     background-size: cover;
     background-attachment: fixed;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     display: flex;
     position: fixed;
     top: 0;
@@ -22,55 +30,55 @@ body {
     height: 3rem;
     color: white;
     z-index: 1;
-  }
-  
-  .navbar img {
+}
+
+.navbar img {
     height: 100%;
     margin: 0;
     padding: 0;
     padding-left: 100px;
-  }
-  
-  .navbar ul {
+}
+
+.navbar ul {
     display: flex;
     padding-right: 2rem;
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .navbar ul li {
+}
+
+.navbar ul li {
     margin: 0 10px;
     margin-left: auto;
-  }
-  
-  .navbar a {
+}
+
+.navbar a {
     color: white;
     text-decoration: none;
-    font-size: 1.5rem;
-    padding: 10px;
-    margin-right: 10px;
+    font-size: 2.0rem;
+    font-family: 'Lily Script One', sans-serif;
+
+    margin-right: 3rem;
     cursor: pointer;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-    .navbar a:hover {
-      color: orangered;
-      transform: scale(0.9);
-      transition: transform 0.3s ease-in-out;
-      
-  }
-  
-  .container {
+}
+
+.navbar a:hover {
+    color: orangered;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     margin: 20px;
     margin-top: 80px;
-  }
-  
-  .match-list {
+}
+
+.match-list {
     flex: 1 0 60%;
     background-color: white;
     padding: 20px;
@@ -78,28 +86,28 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     align-items: stretch;
-  }
-  
-  .match-card {
+}
+
+.match-card {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     cursor: pointer;
     gap: 4rem;
-  }
-  
-  .match-card img {
+}
+
+.match-card img {
     width: 50px;
     height: 50px;
     object-fit: content;
-  }
-  
-  .match-card h2 {
+}
+
+.match-card h2 {
     margin: 0 10px;
     font-size: 16px;
-  }
-  
-  .match-details {
+}
+
+.match-details {
     flex: 1 0 20%;
     background-color: black;
     color: white;
@@ -107,128 +115,129 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     align-items: stretch;
-  }
-  
-  .match-details h2 {
+}
+
+.match-details h2 {
     margin: 0;
     font-size: 20px;
     margin-bottom: 10px;
-  }
-  
-  .match-details p {
+}
+
+.match-details p {
     font-size: 14px;
     margin-bottom: 20px;
-  }
-  
-  .match-details .ticket-count {
+}
+
+.match-details .ticket-count {
     margin-bottom: 10px;
-  }
-  
-  .match-details .buy-button {
-    background-color: #4CAF50;
+}
+
+.match-details .buy-button {
+    background-color: orangered;
     color: white;
+    font-size: 1rem;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
-  }
-  
-  .match-details .buy-button:disabled {
-    background-color: #ccc;
+}
+
+.match-details .buy-button:disabled {
+    background-color: orange;
     cursor: not-allowed;
-  }
-  
-  .homecontainer {
+}
+
+.homecontainer {
     text-align: center;
-    margin-top: 180px;
+    margin-top: 0.5rem;
     background-color: transparent;
     padding: 20px;
-  }
-  
-  .homecontainer h1 {
-    font-size: 32px;
+}
+
+.homecontainer h1 {
+    font-size: 3.5rem;
+    font-family: 'Lily Script One', sans-serif;
     margin-bottom: 20px;
-  }
-  
-  .homecontainer p {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .homebuttons {
+    color: orangered;
+}
+
+.homebuttons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .homebuttons a {
+    margin-top: 200px;
+    
+}
+
+.homebuttons a {
     text-decoration: none;
     margin: 0 10px;
-  }
-  
-  .homebuttons button {
+}
+
+.homebuttons button {
     background-color: orangered;
     color: white;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
-  }
-  
-  .homebuttons button:hover {
+    transition: transform 0.3s ease-in-out;
+}
+
+.homebuttons button:hover {
     background-color: darkorange;
-  }
-  
-  .aboutcontainer {
+    transform: scale(1.1);
+}
+
+.aboutcontainer {
     text-align: center;
     margin-top: 180px;
     background-color: transparent;
     padding: 20px;
-  }
-  
-  .aboutcontainer h2 {
+}
+
+.aboutcontainer h2 {
     font-size: 28px;
     margin-bottom: 20px;
-  }
-  
-  .aboutcontainer p {
+}
+
+.aboutcontainer p {
     font-size: 18px;
     margin-bottom: 20px;
-  }
-  
-  .aboutcontainer ul {
+}
+
+.aboutcontainer ul {
     text-align: left;
     margin-left: 40px;
     margin-bottom: 20px;
-  }
-  
-  .aboutcontainer ul li {
+}
+
+.aboutcontainer ul li {
     font-size: 16px;
     margin-bottom: 10px;
-  }
-  
-  .aboutbuttons {
+}
+
+.aboutbuttons {
     margin-top: 20px;
-  }
-  
-  .aboutbuttons a {
+}
+
+.aboutbuttons a {
     text-decoration: none;
-  }
-  
-  .aboutbuttons button {
+}
+
+.aboutbuttons button {
     background-color: orange;
     color: white;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
-  }
-  
-  .aboutbuttons button:hover {
+}
+
+.aboutbuttons button:hover {
     background-color: darkorange;
-  }
-  
-  footer {
+}
+
+footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -236,47 +245,47 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Lily Script One', sans-serif;
     padding: 10px;
     background-color: black;
     color: white;
     z-index: 1;
-  }
-  
-  footer p {
+}
+
+footer p {
     margin: 0;
-    font-size: 14px;
-  }
-  
-  .social-media,
-  .app-stores {
+    font-size: 1.3rem;
+}
+
+.social-media,
+.app-stores {
     display: flex;
     align-items: center;
-  }
-  
-  .social-media p,
-  .app-stores p {
+}
+
+.social-media p,
+.app-stores p {
     margin: 0 10px;
-  }
-  
-  .social-media a,
-  .app-stores a {
+}
+
+.social-media a,
+.app-stores a {
     text-decoration: none;
     color: white;
     font-size: 24px;
     margin-right: 10px;
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .social-media a:hover,
-  .app-stores a:hover {
+}
+
+.social-media a:hover,
+.app-stores a:hover {
     transform: scale(1.1) rotate(-3deg);
-  }
-  
-  .app-stores {
+}
+
+.app-stores {
     margin-left: auto;
-  }
-  
-  .app-stores i {
+}
+
+.app-stores i {
     font-size: 28px;
-  }
-  
+}
