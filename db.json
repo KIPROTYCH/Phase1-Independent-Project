@@ -1,0 +1,58 @@
+{
+    "matches": [
+        {
+            "team1": "Manchester United",
+            "team2": "Manchester City",
+            "date": "2023-07-05",
+            "time": "19:00",
+            "tickets": 100,
+            "team1Logo": "https://tinyurl.com/vseu2v6",
+            "team2Logo": "https://tinyurl.com/y5cdpvqp"
+        },
+        {
+            "team1": "Liverpool",
+            "team2": "Chelsea",
+            "date": "2023-07-06",
+            "time": "18:30",
+            "tickets": 80,
+            "team1Logo": "https://tinyurl.com/v9tryfu",
+            "team2Logo": "https://tinyurl.com/ybfwugdu"
+        },
+        {
+            "team1": "Crystal United",
+            "team2": "Tottenham Hotspur",
+            "date": "2023-07-07",
+            "time": "20:00",
+            "tickets": 120,
+            "team1Logo": "https://tinyurl.com/2y57a865",
+            "team2Logo": "https://tinyurl.com/y4z4vb5x"
+        },
+        {
+            "team1": "Leicester City",
+            "team2": "Everton",
+            "date": "2023-07-08",
+            "time": "16:30",
+            "tickets": 60,
+            "team1Logo": "https://tinyurl.com/286kyxdq",
+            "team2Logo": "https://tinyurl.com/26pjeq2e"
+        },
+        {
+            "team1": "Burnley FC",
+            "team2": "Aston Villa",
+            "date": "2023-07-09",
+            "time": "15:00",
+            "tickets": 90,
+            "team1Logo": "https://tinyurl.com/2bc3s9te",
+            "team2Logo": "https://tinyurl.com/29dgw2zg"
+        },
+        {
+            "team1": "Leeds United",
+            "team2": "Newcastle United",
+            "date": "2023-07-10",
+            "time": "17:30",
+            "tickets": 70,
+            "team1Logo": "https://tinyurl.com/27ltaaop",
+            "team2Logo": "https://tinyurl.com/2ac7dems"
+        }
+    ]
+}
