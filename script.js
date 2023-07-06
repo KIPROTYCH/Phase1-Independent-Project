@@ -97,4 +97,34 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    // Handle form submit
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Thank You for your Feedback.');
+
+        const formData = new FormData(contactForm);
+        const requestBody = {};
+
+        for (let [key, value] of formData.entries()) {
+            requestBody[key] = value;
+        }
+
+        // Send data to the server using POST method
+        fetch('https://example.com/feedback', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(requestBody)
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Feedback submitted:', data);
+            })
+            .catch(error => {
+                console.error('Error submitting feedback:', error);
+            });
+    });
 });
