@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     const matchList = document.getElementById('matchList');
     const matchDetails = document.getElementById('matchDetails');
@@ -14,18 +15,18 @@ document.addEventListener('DOMContentLoaded', function () {
         const matchCard = document.createElement('div');
         matchCard.classList.add('match-card');
 
-        const team1Logo = document.createElement('img');
-        team1Logo.src = match.team1Logo;
-        team1Logo.alt = match.team1;
-        matchCard.appendChild(team1Logo);
+        const teamALogo = document.createElement('img');
+        teamALogo.src = match.teamA.logo;
+        teamALogo.alt = match.teamA.name;
+        matchCard.appendChild(teamALogo);
 
-        const team2Logo = document.createElement('img');
-        team2Logo.src = match.team2Logo;
-        team2Logo.alt = match.team2;
-        matchCard.appendChild(team2Logo);
+        const teamBLogo = document.createElement('img');
+        teamBLogo.src = match.teamB.logo;
+        teamBLogo.alt = match.teamB.name;
+        matchCard.appendChild(teamBLogo);
 
         const title = document.createElement('h2');
-        title.textContent = match.team1 + ' vs ' + match.team2;
+        title.textContent = match.teamA.name + ' vs ' + match.teamB.name;
         matchCard.appendChild(title);
 
         const details = document.createElement('p');
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
         matchDetails.innerHTML = '';
 
         const title = document.createElement('h2');
-        title.textContent = match.team1 + ' vs ' + match.team2;
+        title.textContent = match.teamA.name + ' vs ' + match.teamB.name;
         matchDetails.appendChild(title);
 
         const details = document.createElement('p');
@@ -71,6 +72,28 @@ document.addEventListener('DOMContentLoaded', function () {
                     buyButton.disabled = true;
                     buyButton.textContent = 'Sold Out';
                 }
+
+                alert('Ticket purchased! Check your mail.');
+            }
+        });
+
+        const cancelButton = document.createElement('button');
+        cancelButton.classList.add('cancel-button');
+        cancelButton.textContent = 'Cancel Ticket';
+        matchDetails.appendChild(cancelButton);
+
+        // Handle cancel button click
+        cancelButton.addEventListener('click', function () {
+            if (match.tickets < 100) {
+                match.tickets++;
+                ticketCount.textContent = 'Tickets Remaining: ' + match.tickets;
+
+                if (match.tickets === 1) {
+                    buyButton.disabled = false;
+                    buyButton.textContent = 'Buy Ticket';
+                }
+
+                alert('Ticket Canceled!');
             }
         });
     }
