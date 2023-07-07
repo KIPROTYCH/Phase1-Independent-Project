@@ -2,6 +2,13 @@
 
 #### By: Yegon G.K. (Software Engineer)
 
+#### live links
+
+#### Repository link
+https://github.com/KIPROTYCH/Phase1-Independent-Project.git
+#### JSON Server link
+https://sports-1bfw.onrender.com/
+
 ## Table of Content
 1. Description.
 2. Project Setup.
