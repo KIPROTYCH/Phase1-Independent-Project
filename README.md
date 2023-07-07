@@ -7,8 +7,12 @@ https://kiprotych.github.io/Phase1-Independent-Project/
 
 #### Repository link
 https://github.com/KIPROTYCH/Phase1-Independent-Project.git
+
 #### JSON Server link
 https://sports-1bfw.onrender.com/
+
+#### Figma Design
+https://www.figma.com/file/GEOiEmF199l4rmaqWIRiEQ/Football?type=design&node-id=0-1&mode=design&t=jMe9xtavmrexgvVK-0
 
 ## Table of Content
 1. Description.
