@@ -56,6 +56,6 @@ The content of this repository is licensed under the MIT License.
 In conclusion, the Sports Ticket Booking and Live Streaming Website showcases the power of technology in the realm of sports. Through the skillful integration of HTML, CSS, JavaScript, and an API, this project offers a seamless platform for sports enthusiasts. With features like streamlined ticket booking and immersive live streaming, it leverages cutting-edge technology to enhance the user experience, providing convenience, accuracy, and an unparalleled way to enjoy sports events.
 
 ## Author's Info:
-1. Slack/Mattermost:Yegon.
-2. linkedin:Yegon G.K.
-3. kiprotych@gmail.com
+1. Slack/Mattermost - Yegon.
+2. linkedin - Yegon G.K.
+3. Email - kiprotych@gmail.com
