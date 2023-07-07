@@ -38,6 +38,21 @@ document.addEventListener('DOMContentLoaded', function () {
             displayMatchDetails(match);
         });
 
+        const deleteButton = document.createElement('button');
+        deleteButton.classList.add('delete-button');
+        deleteButton.textContent = 'Delete';
+        matchCard.appendChild(deleteButton);
+
+        // Handle delete button click
+        deleteButton.addEventListener('click', function (event) {
+            event.stopPropagation();
+            const confirmation = confirm('Do You Want to Delete Match?!');
+
+            if (confirmation) {
+                deleteMatchCard(match, matchCard);
+            }
+        });
+
         return matchCard;
     }
 
@@ -96,6 +111,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('Ticket Canceled!');
             }
         });
+    }
+
+    function deleteMatchCard(match, matchCard) {
+        // Simulate the deletion by removing the match card from the DOM
+        matchCard.remove();
+        alert('Match deleted!');
     }
 
     // Handle form submit

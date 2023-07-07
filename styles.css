@@ -57,7 +57,6 @@ body {
     text-decoration: none;
     font-size: 2.0rem;
     font-family: 'Lily Script One', sans-serif;
-
     margin-right: 3rem;
     cursor: pointer;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
@@ -84,10 +83,11 @@ body {
     background-color: rgba(128, 128, 128, 0.574);
     border-radius: 8px;
     margin-right: 20px;
+    padding: 1rem;
 }
 
 .match-details {
-    flex: 1 0 30%;
+    flex: 1 0 35%;
     background-color: rgba(128, 128, 128, 0.574);
     border-radius: 8px;
     margin-right: 20px;
@@ -98,6 +98,11 @@ body {
     font-family: 'Lily Script One', sans-serif;
     font-size: 2.5rem;
 
+}
+
+.container .matches p {
+    font-size: 15px;
+    font-weight: 600;
 }
 
 button {
@@ -116,10 +121,11 @@ button:hover {
     gap: 5px;
     padding-left: 1rem;
     text-align: center;
-    background-color: rgba(245, 245, 245, 0.807);
+    background-color: rgba(255, 255, 255, 0.75);
     border-radius: 1rem;
 }
-.match-card:hover{
+
+.match-card:hover {
     background-color: rgba(255, 68, 0, 0.812);
     transform: scale(1.0);
     transition: transform 0.5s ease-in-out;
@@ -156,17 +162,20 @@ button:hover {
 }
 
 .match-details p {
+    font-family: 'Lily Script One', sans-serif;
     font-size: 1.5rem;
     margin-bottom: 20px;
+    color: black;
+    font-weight: 600;
 }
 
 .match-details .ticket-count {
     margin-bottom: 10px;
 }
 
-.container .match-details h2 {
+/* .container .match-details h2 {
     text-align: center;
-}
+} */
 
 .match-details .buy-button,
 .match-details .cancel-button {
@@ -177,12 +186,36 @@ button:hover {
     border-radius: 1rem;
     padding: 10px 20px;
     cursor: pointer;
-    margin-right: 6rem;
+    margin-right: 1rem;
+    align-items: center;
 }
 
 .match-details .buy-button:disabled {
     background-color: orange;
     cursor: not-allowed;
+}
+
+#matchDetails {
+    background-color: rgba(255, 255, 255, 0.75);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    transform: scale(1.1);
+    background-color: black;
 }
 
 .homecontainer {
@@ -193,10 +226,10 @@ button:hover {
 }
 
 .homecontainer h1 {
-    font-size: 3.3rem;
+    font-size: 3.5rem;
     font-family: 'Lily Script One', sans-serif;
     margin-bottom: 20px;
-    color: orangered;
+    color: rgba(255, 68, 0, 0.917);
 }
 
 .homebuttons {
@@ -239,14 +272,17 @@ button:hover {
     background-color: rgba(128, 128, 128, 0.896);
     padding: 20px;
     box-sizing: border-box;
+    border-radius: 1rem;
     text-align: center;
+    font-weight: 500;
 }
 
 .aboutcontainer h2 {
     margin-bottom: 10px;
     text-align: center;
     font-family: 'Lily Script One', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    color: black;
 }
 
 .aboutbuttons {
@@ -266,12 +302,13 @@ button:hover {
 }
 
 .aboutbuttons button:hover {
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 .contactscontainer {
     display: flex;
-    margin: 5rem;
+    margin: 4rem;
+
 }
 
 .my-contacts {
@@ -279,9 +316,22 @@ button:hover {
     height: auto;
     margin-right: 20px;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 3rem;
     font-size: 1.2rem;
     background-color: rgba(128, 128, 128, 0.896);
+}
+
+.my-contacts .contact-info {
+    background-color: rgba(255, 255, 255, 0.812);
+    border-radius: 1rem;
+    padding: 0 40px;
+    padding-left: 13rem;
+
+}
+
+.my-contacts .contact-info h3 {
+
+    margin: 1rem;
 }
 
 .contact-container {
@@ -298,6 +348,7 @@ button:hover {
 .contact-container p {
     line-height: 1.5;
     font-size: 1.3rem;
+
 }
 
 .contact-container form {
@@ -322,12 +373,12 @@ button:hover {
 }
 
 .contact-container button[type="submit"] {
-    padding: 10px 20px;
+    padding: 10px 40px;
     background-color: orangered;
     border-radius: 1rem;
     margin-left: 40%;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.1rem;
     border: none;
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
@@ -357,9 +408,10 @@ footer {
 footer p {
     margin: 0;
     font-size: 1.4rem;
-    
+
 }
-.copyright p{
+
+.copyright p {
     padding-left: 17rem;
 }
 
