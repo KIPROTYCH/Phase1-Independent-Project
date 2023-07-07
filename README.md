@@ -2,7 +2,8 @@
 
 #### By: Yegon G.K. (Software Engineer)
 
-#### live links
+#### live Page links
+https://kiprotych.github.io/Phase1-Independent-Project/
 
 #### Repository link
 https://github.com/KIPROTYCH/Phase1-Independent-Project.git
