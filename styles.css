@@ -396,7 +396,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2rem;
+    height: 2.5rem;
     background-color: black;
     color: white;
     font-family: 'Lily Script One', sans-serif;
@@ -409,11 +409,16 @@ footer {
 
 .social-media p {
     margin: 0;
+    font-size: 1.3rem;
 }
 
 .apps {
     display: flex;
     align-items: center;
+}
+.apps p{
+    padding: 1rem;
+    font-size: 1.3rem;
 }
 
 .apps a {
@@ -426,10 +431,10 @@ footer {
 
 .apps a:hover {
     color: orangered;
-    transform: scale(1.4) rotate(-3deg);
+    transform: scale(1.4);
     transition: transform 0.5s ease-in-out;
 }
 
 .apps a i {
-    margin-right: 5px;
+    margin-right: 1rem;
 }
